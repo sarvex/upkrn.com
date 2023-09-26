@@ -44,8 +44,8 @@ devDependencies:
     specifier: 7.4.4
     version: 7.4.4(typescript@5.2.2)(vite@4.4.9)
   '@storybook/html':
-    specifier: 7.4.4
-    version: 7.4.4(@babel/core@7.22.9)
+    specifier: 7.4.5
+    version: 7.4.5(@babel/core@7.22.9)
   '@storybook/html-vite':
     specifier: 7.4.4
     version: 7.4.4(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(vite@4.4.9)
@@ -3248,6 +3248,13 @@ packages:
       '@storybook/preview-api': 7.4.4
     dev: true
 
+  /@storybook/core-client@7.4.5:
+    resolution: {integrity: sha512-d/qiCUZeOKY0HX/YmomxlccxJ2NKC3ttRrAsAXzJGypClKabv20X+qbeO/E7Kp5UQxIEJx1wuwJPcnlCvjgPDA==}
+    dependencies:
+      '@storybook/client-logger': 7.4.5
+      '@storybook/preview-api': 7.4.5
+    dev: true
+
   /@storybook/core-common@7.4.0:
     resolution: {integrity: sha512-QKrBL46ZFdfTjlZE3f7b59Q5+frOHWIJ64sC9BZ2PHkZkGjFeYRDdJJ6EHLYBb+nToynl33dYN1GQz+hQn2vww==}
     dependencies:
@@ -3541,6 +3548,20 @@ packages:
       - supports-color
     dev: true
 
+  /@storybook/docs-tools@7.4.5:
+    resolution: {integrity: sha512-ctK+yGb2nvWISSvCCzj3ZhDaAb7I2BLjbxuBGTyNPvl4V9UQ9LBYzdJwR50q+DfscxdwSHMSOE/0OnzmJdaSJA==}
+    dependencies:
+      '@storybook/core-common': 7.4.5
+      '@storybook/preview-api': 7.4.5
+      '@storybook/types': 7.4.5
+      '@types/doctrine': 0.0.3
+      doctrine: 3.0.0
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
   /@storybook/global@5.0.0:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
     dev: true
@@ -3583,6 +3604,24 @@ packages:
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 7.4.4
       '@storybook/types': 7.4.4
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /@storybook/html@7.4.5(@babel/core@7.22.9):
+    resolution: {integrity: sha512-V488Z9Nr7+rRW9fBn8BjfEpF2c43XBq/CE92OV1m9Td/P7h7X/Lhveq9zclx+0fpv2/sf2cP5mNglL/xxo68ww==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@babel/core': '*'
+    dependencies:
+      '@babel/core': 7.22.9
+      '@storybook/core-client': 7.4.5
+      '@storybook/docs-tools': 7.4.5
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.4.5
+      '@storybook/types': 7.4.5
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - encoding
