@@ -42,13 +42,13 @@ devDependencies:
     version: 7.6.18(react-dom@18.2.0)(react@18.2.0)
   '@storybook/builder-vite':
     specifier: 7.6.18
-    version: 7.6.18(typescript@5.3.3)(vite@5.0.13)
+    version: 7.6.18(typescript@5.3.3)(vite@5.2.10)
   '@storybook/html':
     specifier: 7.6.18
     version: 7.6.18(@babel/core@7.23.9)
   '@storybook/html-vite':
     specifier: 7.6.18
-    version: 7.6.18(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.0.13)
+    version: 7.6.18(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.2.10)
   '@types/eslint':
     specifier: 8.56.10
     version: 8.56.10
@@ -87,7 +87,7 @@ devDependencies:
     version: 7.6.18
   storybook-framework-qwik:
     specifier: 0.2.5
-    version: 0.2.5(@builder.io/qwik@1.5.2)(@types/node@20.12.7)(typescript@5.3.3)(vite@5.0.13)
+    version: 0.2.5(@builder.io/qwik@1.5.2)(@types/node@20.12.7)(typescript@5.3.3)(vite@5.2.10)
   tailwindcss:
     specifier: 3.4.3
     version: 3.4.3
@@ -101,11 +101,11 @@ devDependencies:
     specifier: 33.7.1
     version: 33.7.1
   vite:
-    specifier: 5.0.13
-    version: 5.0.13(@types/node@20.12.7)
+    specifier: 5.2.10
+    version: 5.2.10(@types/node@20.12.7)
   vite-tsconfig-paths:
     specifier: 4.3.2
-    version: 4.3.2(typescript@5.3.3)(vite@5.0.13)
+    version: 4.3.2(typescript@5.3.3)(vite@5.2.10)
   vitest:
     specifier: 1.2.2
     version: 1.2.2(@types/node@20.12.7)(@vitest/ui@1.2.2)
@@ -3472,7 +3472,7 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/builder-vite@7.6.18(typescript@5.3.3)(vite@5.0.13):
+  /@storybook/builder-vite@7.6.18(typescript@5.3.3)(vite@5.2.10):
     resolution: {integrity: sha512-f3chnC6ug9KJDz3Z+HNl8yhJ/SUT0ASdJjKViVJ90MKKyFpeCvzs2DSgMGv2UJrPfBMh6PhFM2dy26+LksioCQ==}
     peerDependencies:
       '@preact/preset-vite': '*'
@@ -3504,7 +3504,7 @@ packages:
       magic-string: 0.30.5
       rollup: 3.29.4
       typescript: 5.3.3
-      vite: 5.0.13(@types/node@20.12.7)
+      vite: 5.2.10(@types/node@20.12.7)
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3847,12 +3847,12 @@ packages:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
     dev: true
 
-  /@storybook/html-vite@7.6.18(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.0.13):
+  /@storybook/html-vite@7.6.18(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.2.10):
     resolution: {integrity: sha512-eZXNQVQjc68Mbkh19hexFmMkK+bEvKE3X2ptNNegOSxey9lI5+kRdwk16ovbkUuuIyIE6QVzE8GCqbgUEJe4VA==}
     engines: {node: ^14.18 || >=16}
     dependencies:
       '@storybook/addons': 7.6.18(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/builder-vite': 7.6.18(typescript@5.3.3)(vite@5.0.13)
+      '@storybook/builder-vite': 7.6.18(typescript@5.3.3)(vite@5.2.10)
       '@storybook/client-api': 7.6.18
       '@storybook/core-server': 7.6.18
       '@storybook/html': 7.6.18(@babel/core@7.23.9)
@@ -10144,14 +10144,14 @@ packages:
     resolution: {integrity: sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==}
     dev: true
 
-  /storybook-framework-qwik@0.2.5(@builder.io/qwik@1.5.2)(@types/node@20.12.7)(typescript@5.3.3)(vite@5.0.13):
+  /storybook-framework-qwik@0.2.5(@builder.io/qwik@1.5.2)(@types/node@20.12.7)(typescript@5.3.3)(vite@5.2.10):
     resolution: {integrity: sha512-wnJJwgV2zWK1+AfoEj5x1sSfpkac9p1SWX/Z+FHD0q78j4MbWRMcMIHvwIu777mBNDG3ixZRg3sY7dRW7C010g==}
     engines: {node: ^14.18 || >=16}
     peerDependencies:
       '@builder.io/qwik': '>=0.15.2'
     dependencies:
       '@builder.io/qwik': 1.5.2(@types/node@20.12.7)(undici@6.12.0)
-      '@storybook/builder-vite': 7.6.18(typescript@5.3.3)(vite@5.0.13)
+      '@storybook/builder-vite': 7.6.18(typescript@5.3.3)(vite@5.2.10)
       '@storybook/docs-tools': 7.6.10
       magic-string: 0.30.5
       react-docgen-typescript: 2.2.2(typescript@5.3.3)
@@ -11102,7 +11102,7 @@ packages:
       - terser
     dev: true
 
-  /vite-tsconfig-paths@4.3.2(typescript@5.3.3)(vite@5.0.13):
+  /vite-tsconfig-paths@4.3.2(typescript@5.3.3)(vite@5.2.10):
     resolution: {integrity: sha512-0Vd/a6po6Q+86rPlntHye7F31zA2URZMbH8M3saAZ/xR9QoGN/L21bxEGfXdWmFdNkqPpRdxFT7nmNe12e9/uA==}
     peerDependencies:
       vite: '*'
@@ -11113,7 +11113,7 @@ packages:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.0.3(typescript@5.3.3)
-      vite: 5.0.13(@types/node@20.12.7)
+      vite: 5.2.10(@types/node@20.12.7)
     transitivePeerDependencies:
       - supports-color
       - typescript
