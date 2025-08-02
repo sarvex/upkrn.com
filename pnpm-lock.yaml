@@ -98,8 +98,8 @@ devDependencies:
     specifier: 7.11.0
     version: 7.11.0
   vercel:
-    specifier: 44.2.13
-    version: 44.2.13
+    specifier: 44.7.0
+    version: 44.7.0
   vite:
     specifier: 6.3.5
     version: 6.3.5(@types/node@22.15.33)
@@ -1094,7 +1094,7 @@ packages:
       rollup:
         optional: true
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       estree-walker: 2.0.2
       picomatch: 4.0.2
 
@@ -1452,7 +1452,7 @@ packages:
       find-cache-dir: 3.3.2
       find-up: 5.0.0
       fs-extra: 11.2.0
-      glob: 10.3.10
+      glob: 10.4.5
       handlebars: 4.7.8
       lazy-universal-dotenv: 4.0.0
       node-fetch: 2.7.0
@@ -1667,7 +1667,7 @@ packages:
   /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   /@types/aria-query@5.0.4:
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
@@ -1744,7 +1744,7 @@ packages:
   /@types/estree-jsx@1.0.3:
     resolution: {integrity: sha512-pvQ+TKeRHeiUGRhvYwRrQ/ISnohKkSJR14fT2yqyZ4e9K5vqc7hrtY2Y1Dw0ZwAzQ6DQsxsaCUuSIIi8v0Cq6w==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   /@types/estree@1.0.6:
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -2129,8 +2129,8 @@ packages:
       undici: 5.28.4
     dev: true
 
-  /@vercel/build-utils@10.6.5:
-    resolution: {integrity: sha512-bNw+CcAr1i7nSnoUfRtxx9reX/iuKo/kM61jpFmu32cW36BZzS8KLIz6wvIlWnU7HTTmxENR3tc2PT3yi7yEow==}
+  /@vercel/build-utils@11.0.0:
+    resolution: {integrity: sha512-jeBQHHOVqTgIMynVLtGUhf+Qf2Q0K1C/luZP7wuUM9veTeTMUSjju6HtpuJE5yuxre0rIogKRbKjvRXrAsbOIg==}
     dev: true
 
   /@vercel/error-utils@2.0.3:
@@ -2170,29 +2170,43 @@ packages:
       web-vitals: 0.2.4
     dev: true
 
-  /@vercel/gatsby-plugin-vercel-builder@2.0.88:
-    resolution: {integrity: sha512-3EuQcwSd6TK4rQPOgMRCPl6DJLQFHCSdgRO2xUlI5v33cvylKaeR5FXyNGvuPrTAzBg9U9yy4U8FLWOdr0U2tw==}
+  /@vercel/gatsby-plugin-vercel-builder@2.0.91:
+    resolution: {integrity: sha512-I0kD+79QRi2EsplUXEkNF1OlXw1PqZuOuKza1wTwim6Y3NQNZQxZfADbKEorps1sn2HICXlzuoFdYQ1RxIuMyQ==}
     dependencies:
       '@sinclair/typebox': 0.25.24
-      '@vercel/build-utils': 10.6.5
+      '@vercel/build-utils': 11.0.0
       esbuild: 0.14.47
       etag: 1.8.1
       fs-extra: 11.1.0
     dev: true
 
-  /@vercel/go@3.2.1:
-    resolution: {integrity: sha512-ezjmuUvLigH9V4egEaX0SZ+phILx8lb+Zkp1iTqKI+yl/ibPAtVo5o+dLSRAXU9U01LBmaLu3O8Oxd/JpWYCOw==}
+  /@vercel/go@3.2.2:
+    resolution: {integrity: sha512-yYIU3OXkuoxzr47vf+HZnVGujzkVW/e5hrUK0jzCzzmjgo4+5ECrXDSA1bTB6qmWEy6HVsSovnKoHkwDqNIN6Q==}
     dev: true
 
-  /@vercel/hydrogen@1.2.2:
-    resolution: {integrity: sha512-PRA3r1/ZRcklGgs/hczprQZ27jX9Avyq/iEbtmzAFNbFovkTlkE0Wy93pVKJfJ4ISCBzBgUSMktX9+6wgjs32A==}
+  /@vercel/hono@0.0.8:
+    resolution: {integrity: sha512-Fb9z8E7Tp4fdXli6GGp1nAT4JmO/Yhl9/UBCrhvaJXfEVU+/IxLhK76ddnk9XuEpbqif8ssTcJNNPQIR5wcwIQ==}
+    dependencies:
+      '@vercel/node': 5.3.10
+      '@vercel/static-config': 3.1.1
+      ts-morph: 12.0.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - encoding
+      - rollup
+      - supports-color
+    dev: true
+
+  /@vercel/hydrogen@1.2.3:
+    resolution: {integrity: sha512-sU0HWHabNxlTdKQWPMDqwr+3MqnhXc4Tvnl4i9cbdEYn5061SEKhdfpl2RhuvPByQJ8sZL8soVXFHIjFBJAR4w==}
     dependencies:
       '@vercel/static-config': 3.1.1
       ts-morph: 12.0.0
     dev: true
 
-  /@vercel/next@4.9.5:
-    resolution: {integrity: sha512-40PRhbrelVXc/ZAwBnyFaZuPDsqWKsVWG/wUEvJVy7AxZHG4xbaIjGjSoEYPQjXGOlnUwd6i3yZ6bXyhxotkjA==}
+  /@vercel/next@4.11.0:
+    resolution: {integrity: sha512-FIm8U1U2JCuo+oWbLcR3/hsvT69zVcmQSulcIJXZsfiT2miG6NYie5UuEHY30m2HGyB41lZzgukBhQwIXFSAow==}
     dependencies:
       '@vercel/nft': 0.29.2
     transitivePeerDependencies:
@@ -2224,14 +2238,14 @@ packages:
       - supports-color
     dev: true
 
-  /@vercel/node@5.3.4:
-    resolution: {integrity: sha512-U3VvStXs608RYjczrrZQtU8Q/hDF0FShJPYrTCJq64ppfvgjiRJra+33bd32Gqmn19QjuQNLE2qxGjKZGjsYDw==}
+  /@vercel/node@5.3.10:
+    resolution: {integrity: sha512-hJuCwPpv7EDZnmHLtAV6GdpTkGlUcRrcRLhnJ0Ma1uOMhx7ZYudOhnfusUW3D60+kY9KgvABi+Ox1U43Gq0ofg==}
     dependencies:
       '@edge-runtime/node-utils': 2.3.0
       '@edge-runtime/primitives': 4.1.0
       '@edge-runtime/vm': 3.2.0
       '@types/node': 16.18.11
-      '@vercel/build-utils': 10.6.5
+      '@vercel/build-utils': 11.0.0
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 0.29.2
       '@vercel/static-config': 3.1.1
@@ -2256,12 +2270,12 @@ packages:
       - supports-color
     dev: true
 
-  /@vercel/python@4.7.2:
-    resolution: {integrity: sha512-i2QBNMvNxUZQ2e5vLIL7mUkLg5Qkl9nqxUNXCYezdyvk2Ql6xYKjg7tMhpK/uiy094KfZSOECpDbDxkIN0jUSw==}
+  /@vercel/python@5.0.0:
+    resolution: {integrity: sha512-JHpYKQ8d478REzmF7NcJTJcncFziJhVOwzan8wW4F1RJOHGDBTPkATAgi4CPQIijToRamPCkgeECzNOvLUDR+w==}
     dev: true
 
-  /@vercel/redwood@2.3.3:
-    resolution: {integrity: sha512-9Dfith+CYNNt/5Mkrklu7xWroWgSJVR4uh7mwu/2IvuCiJMNa24ReR9xtQNyGFAwAjdeweQ/nHfImz+12ORfpQ==}
+  /@vercel/redwood@2.3.4:
+    resolution: {integrity: sha512-3QEudmaTMzcFsNJ23vq5eA4UistHYINxIVhHuPMzNhh9OdOQEPO6xSo8T7hOVKQ15tewtM3+lfzuVOxN6Hj39Q==}
     dependencies:
       '@vercel/nft': 0.29.2
       '@vercel/static-config': 3.1.1
@@ -2273,8 +2287,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vercel/remix-builder@5.4.9:
-    resolution: {integrity: sha512-+fWdMjVI6bO0GUBJbw2seBDnLvPi2dd9aBQHVG2TCbJobBPfXgyEMgRWDS+4gjhXn4jLatX4B5C5iJykkeMqNQ==}
+  /@vercel/remix-builder@5.4.10:
+    resolution: {integrity: sha512-tUUYv1eZgZeziuny23+7Z0PLOPCNL46aU9Ktn2bf4rzpdcm2LZASNXBY/WFPbY3tUfqyRkhab7J+7fh9rZPpGg==}
     dependencies:
       '@vercel/error-utils': 2.0.3
       '@vercel/nft': 0.29.2
@@ -2288,15 +2302,15 @@ packages:
       - supports-color
     dev: true
 
-  /@vercel/ruby@2.2.0:
-    resolution: {integrity: sha512-FJF9gKVNHAljGOgV6zS5ou2N7ZgjOqMMtcPA5lsJEUI5/AZzVDWCmtcowTP80wEtHuupkd7d7M399FA082kXYQ==}
+  /@vercel/ruby@2.2.1:
+    resolution: {integrity: sha512-DsmTCggOa/Uvt/9JkafXx9U+Bz5eNIb6Bs422EOQo2zKwcxW88ITSh8mM5m0dQ0+B4k02X/moVim6iFa4sjazg==}
     dev: true
 
-  /@vercel/static-build@2.7.14:
-    resolution: {integrity: sha512-m03XmxOHfyW/NzP75ADnKUS1PJE17f4toT3XOBCsZu2gGbjW4SADJH1lZWnVzCAsd4eHTSW9rwWl5tO+IUMpIQ==}
+  /@vercel/static-build@2.7.17:
+    resolution: {integrity: sha512-gottkM98UkbQfNOnn+UiAhrNgtx6eQBUygHak7fTfTB53gr1ikadUwNY8PVj4pYn8AwNpwHqFI8dNYnTB88klA==}
     dependencies:
       '@vercel/gatsby-plugin-vercel-analytics': 1.0.11
-      '@vercel/gatsby-plugin-vercel-builder': 2.0.88
+      '@vercel/gatsby-plugin-vercel-builder': 2.0.91
       '@vercel/static-config': 3.1.1
       ts-morph: 12.0.0
     dev: true
@@ -3613,7 +3627,7 @@ packages:
   /estree-util-attach-comments@3.0.0:
     resolution: {integrity: sha512-cKUwm/HUcTDsYh/9FgnuFqpfquUbwIqwKM26BVCGDPVgvaCl/nDCCjUfiLlx6lsEZ3Z4RFxNbOQ60pkaEwFxGw==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   /estree-util-build-jsx@3.0.1:
     resolution: {integrity: sha512-8U5eiL6BTrPxp/CHbs2yMgP8ftMhR5ww1eIKoWRMlqvltHF8fZn5LRDvTKuxD3DUn+shRbLGqXemcP51oFCsGQ==}
@@ -3645,7 +3659,7 @@ packages:
   /estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   /esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
@@ -3910,18 +3924,6 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.3.10:
-    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    hasBin: true
-    dependencies:
-      foreground-child: 3.1.1
-      jackspeak: 2.3.6
-      minimatch: 9.0.4
-      minipass: 7.1.2
-      path-scurry: 1.10.1
-    dev: true
-
   /glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
@@ -4019,7 +4021,7 @@ packages:
   /hast-util-to-estree@3.1.0:
     resolution: {integrity: sha512-lfX5g6hqVh9kjS/B9E2gSkvHH4SZNiQFiqWS0x9fENzEl+8W12RqdRxX6d/Cwxi30tPQs3bIO+aolQJNp1bIyw==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/estree-jsx': 1.0.3
       '@types/hast': 3.0.4
       comma-separated-tokens: 2.0.3
@@ -4041,7 +4043,7 @@ packages:
   /hast-util-to-jsx-runtime@2.3.0:
     resolution: {integrity: sha512-H/y0+IWPdsLLS738P8tDnrQ8Z+dj12zQQ6WC11TIM21C8WFVoIxcqWXf2H3hiTVZjF1AWqoimGwrTWecWrnmRQ==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/hast': 3.0.4
       '@types/unist': 3.0.2
       comma-separated-tokens: 2.0.3
@@ -4297,7 +4299,7 @@ packages:
   /is-reference@3.0.2:
     resolution: {integrity: sha512-v3rht/LgVcsdZa3O2Nqs+NMowLOxeOm7Ay9+/ARQ2F+qEoANRcqrjAZKGN0v8ymUetZGgkp26LTnGT7H0Qo9Pg==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   /is-regex@1.1.4:
     resolution: {integrity: sha512-kvRdxDsxZjhzUX07ZnLydzS1TU/TJlTUHHY4YLL87e37oUA49DfkLqgy+VjFocowy29cKvcSiu+kIv728jTTVg==}
@@ -4357,15 +4359,6 @@ packages:
 
   /isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
-    dev: true
-
-  /jackspeak@2.3.6:
-    resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@isaacs/cliui': 8.0.2
-    optionalDependencies:
-      '@pkgjs/parseargs': 0.11.0
     dev: true
 
   /jackspeak@3.4.3:
@@ -4700,7 +4693,7 @@ packages:
   /micromark-extension-mdx-expression@3.0.0:
     resolution: {integrity: sha512-sI0nwhUDz97xyzqJAbHQhp5TfaxEvZZZ2JDqUo+7NvyIYG6BZ5CPPqj2ogUoPJlmXHBnyZUzISg9+oUmU6tUjQ==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.1
       micromark-factory-space: 2.0.0
@@ -4713,7 +4706,7 @@ packages:
     resolution: {integrity: sha512-uvhhss8OGuzR4/N17L1JwvmJIpPhAd8oByMawEKx6NVdBCbesjH4t+vjEp3ZXft9DwvlKSD07fCeI44/N0Vf2w==}
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.1
@@ -4731,7 +4724,7 @@ packages:
   /micromark-extension-mdxjs-esm@3.0.0:
     resolution: {integrity: sha512-DJFl4ZqkErRpq/dAPyeWp15tGrcrrJho1hKK5uBS70BCtfrIFg81sqcTVu3Ta+KD1Tk5vAtBNElWxtAa+m8K9A==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.1
       micromark-util-character: 2.1.0
@@ -4771,7 +4764,7 @@ packages:
   /micromark-factory-mdx-expression@2.0.1:
     resolution: {integrity: sha512-F0ccWIUHRLRrYp5TC9ZYXmZo+p2AM13ggbsW4T0b5CRKP8KHVRB8t4pwtBgTxtjRmwrK0Irwm7vs2JOZabHZfg==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       micromark-util-character: 2.1.0
       micromark-util-events-to-acorn: 2.0.2
@@ -4846,7 +4839,7 @@ packages:
     resolution: {integrity: sha512-Fk+xmBrOv9QZnEDguL9OI9/NQQp6Hz4FuQ4YmCb/5V7+9eAh1s6AYSvL20kHkD67YIg7EpE54TiSlcsf3vyZgA==}
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/unist': 3.0.2
       devlop: 1.1.0
       estree-util-visit: 2.0.0
@@ -5251,14 +5244,6 @@ packages:
       path-to-regexp: 1.8.0
     dev: true
 
-  /path-scurry@1.10.1:
-    resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      lru-cache: 10.2.0
-      minipass: 7.1.2
-    dev: true
-
   /path-scurry@1.11.1:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
@@ -5297,7 +5282,7 @@ packages:
   /periscopic@3.1.0:
     resolution: {integrity: sha512-vKiQ8RRtkl9P+r/+oefh25C3fhybptkHKCZSPlcXiJux2tJF55GnEj3BVn4A5gKfq9NWWXXrxkHBwVPUfH0opw==}
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       estree-walker: 3.0.3
       is-reference: 3.0.2
 
@@ -6432,23 +6417,24 @@ packages:
     dependencies:
       typescript: 5.8.3
 
-  /vercel@44.2.13:
-    resolution: {integrity: sha512-PmT8G4uoazCVC/xs+0PuASIDsvhj8RfEUXYBy+1Qvdd2yAaNDWb8rJ6TCe9h3ybqO3nnkzThmMK04ZpJx2jGXQ==}
+  /vercel@44.7.0:
+    resolution: {integrity: sha512-cTZthZ/103KXZPs3vmg0sJs+0H3lzaAyqs1iPTfDJNtqNcFa8b1FslKsHztP7kcsWLC7Nd09i/XA7tHkBQNFPA==}
     engines: {node: '>= 18'}
     hasBin: true
     dependencies:
       '@vercel/blob': 1.0.2
-      '@vercel/build-utils': 10.6.5
+      '@vercel/build-utils': 11.0.0
       '@vercel/fun': 1.1.6
-      '@vercel/go': 3.2.1
-      '@vercel/hydrogen': 1.2.2
-      '@vercel/next': 4.9.5
-      '@vercel/node': 5.3.4
-      '@vercel/python': 4.7.2
-      '@vercel/redwood': 2.3.3
-      '@vercel/remix-builder': 5.4.9
-      '@vercel/ruby': 2.2.0
-      '@vercel/static-build': 2.7.14
+      '@vercel/go': 3.2.2
+      '@vercel/hono': 0.0.8
+      '@vercel/hydrogen': 1.2.3
+      '@vercel/next': 4.11.0
+      '@vercel/node': 5.3.10
+      '@vercel/python': 5.0.0
+      '@vercel/redwood': 2.3.4
+      '@vercel/remix-builder': 5.4.10
+      '@vercel/ruby': 2.2.1
+      '@vercel/static-build': 2.7.17
       chokidar: 4.0.0
       jose: 5.9.6
     transitivePeerDependencies:
